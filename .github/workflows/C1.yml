@@ -1,5 +1,8 @@
 name: C1
 
+permissions:
+  contents: write
+
 # Menjalankan secara otomatis setiap 4 jam
 on:
   schedule:

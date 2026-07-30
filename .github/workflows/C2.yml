@@ -1,5 +1,8 @@
 name: C2
 
+permissions:
+  contents: write
+
 # Menjalankan secara otomatis setiap 6 jam
 on:
   schedule:
