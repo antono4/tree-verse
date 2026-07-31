@@ -29,6 +29,7 @@ jobs:
 
       - name: Commit changes
         run: |
+          git pull --rebase origin ${{ github.ref_name }}
           git add README.md
           git commit -m "Auto update README at $(date +'%Y-%m-%d %H:%M:%S') WIB" || echo "No changes to commit"
 

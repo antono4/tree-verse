@@ -38,6 +38,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          git pull --rebase origin ${{ github.ref_name }}
           git add README.md
           git commit -m "Auto update README at $(date +'%Y-%m-%d %H:%M:%S') WIB" || echo "No changes to commit"
           git push origin ${{ github.ref_name }}
